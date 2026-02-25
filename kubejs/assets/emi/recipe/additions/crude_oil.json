@@ -1,0 +1,6 @@
+{
+    "type": "emi:world_interaction",
+    "left": "item:tfmg:pumpjack_base",
+    "right": "item:tfmg:industrial_pipe",
+    "output": "fluid:tfmg:crude_oil"
+}

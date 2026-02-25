@@ -1,14 +1,6 @@
 Platform.mods.kubejs.name = 'Gearfall';
 
 global.itemsToRemove = [
-  //TFMG: Items
-  "tfmg:unfinished_circuit_board",
-  "tfmg:unfinished_capacitor",
-  "tfmg:unfinished_electric_motor",
-  "tfmg:unfinished_potentiometer",
-  "tfmg:unfinished_generator",
-  "tfmg:unfinished_transistor",
-
   //Northstar: Items
   "northstar:rutile_concentrate",
   "northstar:sodium_catalyst",
