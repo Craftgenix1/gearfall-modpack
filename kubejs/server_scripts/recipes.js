@@ -48,4 +48,14 @@ ServerEvents.recipes((event) => {
       "northstar:polished_amethyst",
     );
   });
+
+  //Reparing anvil recipe
+  event.recipes.create.item_application(
+    ["minecraft:anvil"],
+    ["minecraft:chipped_anvil", "minecraft:iron_block"],
+  ).id("gearfall:recipes/repairing_chipped_anvil");
+  event.recipes.create.item_application(
+    ["minecraft:chipped_anvil"],
+    ["minecraft:damaged_anvil", "minecraft:iron_block"],
+  ).id("gearfall:recipes/repairing_damaged_anvil");
 });

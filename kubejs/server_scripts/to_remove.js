@@ -3,9 +3,6 @@ ServerEvents.tags("item", (event) => {
   global.itemsToRemove.forEach(id => {
     event.removeAllTagsFrom(id)
   });
-  global.itemsToReplace.forEach(item => {
-    event.removeAllTagsFrom(item.old);
-  });
 });
 
 ServerEvents.recipes((event) => {

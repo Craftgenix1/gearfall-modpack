@@ -1,9 +1,23 @@
 Platform.mods.kubejs.name = "Gearfall";
 
+global.itemsToReplace = [
+  //Northstar: Items
+  { old: "northstar:salt", new: "chemica:salt" },
+  { old: "northstar:iron_cogwheel", new: "tfmg:steel_cogwheel" },
+  { old: "northstar:iron_large_cogwheel", new: "tfmg:large_steel_cogwheel" },
+  { old: "northstar:titanium_ingot", new: "chemica:titanium_ingot" },
+  { old: "northstar:titanium_nugget", new: "chemica:titanium_nugget" },
+  { old: "northstar:titanium_sheet", new: "chemica:titanium_sheet" },
+];
+
+const replaceOld = global.itemsToReplace.map(function (item) {
+  return item.old;
+});
 global.itemsToRemove = [
   //Northstar: Items
   "northstar:rutile_concentrate",
   "northstar:sodium_catalyst",
+  "northstar:electrolysis_machine",
 
   //Northstar: Buckets of Fluids
   "northstar:methane_bucket",
@@ -12,14 +26,7 @@ global.itemsToRemove = [
   "northstar:liquid_hydrogen_bucket",
   "northstar:hydrocarbon_bucket",
   "northstar:titanium_tetrachloride_bucket",
-];
-
-global.itemsToReplace = [
-  //Northstar: Items
-  { old: "northstar:salt", new: "chemica:salt" },
-  { old: "northstar:iron_cogwheel", new: "tfmg:steel_cogwheel" },
-  { old: "northstar:iron_large_cogwheel", new: "tfmg:large_steel_cogwheel" },
-];
+].concat(replaceOld);
 
 global.fluidsToRemove = [
   //Northstar: Fluids
@@ -55,21 +62,16 @@ global.recipesToRemove = [
   "northstar:crafting/iron_large_cogwheel",
   "northstar:crafting/iron_large_cogwheel_from_small",
   "northstar:crafting/iron_cogwheel",
+  "northstar:mechanical_crafting/electrolysis_machine",
 ];
 
 //Remove items from creative tabs, including search tab (this is brute force approach, every item is checked for every tab, but it works :)
-StartupEvents.modifyCreativeTab("northstar:items", (event) => {
-  global.itemsToRemove.forEach((id) => {
-    event.remove(id);
-  });
-});
-StartupEvents.modifyCreativeTab("northstar:tech", (event) => {
-  global.itemsToRemove.forEach((id) => {
-    event.remove(id);
-  });
-});
-StartupEvents.modifyCreativeTab("minecraft:search", (event) => {
-  global.itemsToRemove.forEach((id) => {
-    event.remove(id);
+const tabs = ["northstar:items", "northstar:tech", "minecraft:search"];
+
+tabs.forEach((tab) => {
+  StartupEvents.modifyCreativeTab(tab, (event) => {
+    for (const id of global.itemsToRemove) {
+      event.remove(id);
+    }
   });
 });

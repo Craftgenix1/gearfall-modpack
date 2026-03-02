@@ -8,7 +8,4 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
   global.itemsToRemove.forEach(id => {
     event.remove(id)
   })
-  global.itemsToReplace.forEach(item => {
-    event.remove(item.old)
-  })
 })
