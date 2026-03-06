@@ -43,21 +43,6 @@
 			y: -3.0d
 		}
 		{
-			id: "08524EAB9BAD3771"
-			invisible: true
-			tasks: [{
-				biome: "#gearfall:biomes/mountain"
-				icon: {
-					id: "minecraft:stone"
-				}
-				id: "00B96D2DB05A3112"
-				type: "biome"
-			}]
-			x: 0.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7D9547872D0E31B3"]
 			id: "204D32D575D863C3"
 			rewards: [{
 				id: "772E178446E116D2"
@@ -105,9 +90,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["38286F4EA7DD3DFA"]
 			id: "589B2C06B30E49CC"
-			invisible: true
 			rewards: [{
 				id: "7F45D755AF5BA0A4"
 				item: {
@@ -123,26 +106,6 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["08524EAB9BAD3771"]
-			id: "65AB155DECCC7082"
-			rewards: [{
-				id: "3533BF2B9AF021ED"
-				item: {
-					count: 1
-					id: "kubejs:bauxite_lava_key"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "399DC0BDD6861C5E"
-				item: { count: 1, id: "tfmg:bauxite" }
-				type: "item"
-			}]
-			x: 0.5d
 			y: -1.5d
 		}
 		{

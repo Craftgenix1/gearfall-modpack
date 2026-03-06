@@ -1,0 +1,230 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "interstellar"
+	group: "25496DD32B21B1D6"
+	id: "2FFC34812D49E435"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon_scale: 0.9d
+			id: "6F7E55AA38392D8D"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "7A5F40FD6A3E219B"
+				item: { count: 1, id: "northstar:telescope" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473EEFD4A67A54E1"]
+			id: "51CD9DBF55BECE8A"
+			tasks: [{
+				id: "35982696D3FD7B70"
+				item: { count: 1, id: "northstar:astronomy_table" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F7E55AA38392D8D"]
+			id: "473EEFD4A67A54E1"
+			tasks: [{
+				id: "1BA22A8BFFBC23CD"
+				item: { count: 1, id: "northstar:astronomical_reading" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51CD9DBF55BECE8A"]
+			id: "46C48141591D8AB0"
+			tasks: [{
+				id: "0D220935EA5C39AC"
+				item: { count: 1, id: "northstar:star_map" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"46C48141591D8AB0"
+				"66EA9F68E57EB111"
+				"1A111B1E6048FE15"
+			]
+			id: "3E0EFD48A312717E"
+			tasks: [
+				{
+					id: "5B47FE93002A0E7D"
+					item: { count: 1, id: "northstar:rocket_station" }
+					type: "item"
+				}
+				{
+					id: "24F6B8CC7A5D3C46"
+					item: { count: 1, id: "northstar:rocket_controls" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F81A442D0376D1B"]
+			id: "66EA9F68E57EB111"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				count: 4L
+				id: "26FBF252F41AAD6F"
+				item: { count: 1, id: "chemica:titanium_sheet" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37CECFD79DF0BF65"]
+			id: "1A111B1E6048FE15"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "139E1AC35F749D5B"
+				item: { count: 1, id: "northstar:circuit" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["39F5E78F0D282FDA"]
+			id: "7CB1C5AFB2F12B44"
+			tasks: [{
+				count: 4L
+				id: "0BB162BA54C28A8B"
+				item: { count: 1, id: "northstar:jet_engine" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["66EA9F68E57EB111"]
+			id: "39C2C6D26B4AA305"
+			tasks: [{
+				id: "05A58E95DC61ECA7"
+				item: { count: 1, id: "northstar:hardened_precision_mechanism" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39C2C6D26B4AA305"]
+			id: "565EF11D4D9C5609"
+			tasks: [{
+				id: "69106E4700D78EEC"
+				item: { count: 1, id: "northstar:targeting_computer" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["565EF11D4D9C5609"]
+			id: "0449AC68C77AFF61"
+			tasks: [{
+				id: "2CBA120788D14160"
+				item: { count: 1, id: "northstar:interplanetary_navigator" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0E4D519DDB53D4D7"
+				"39C2C6D26B4AA305"
+			]
+			id: "39F5E78F0D282FDA"
+			tasks: [{
+				id: "1D185E18EC6B0FAF"
+				item: { count: 1, id: "northstar:rocket_combustion_chamber" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			id: "0E4D519DDB53D4D7"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "055244A8EB548E3C"
+				item: { count: 1, id: "northstar:oxygen_separator" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0E4D519DDB53D4D7"
+				"1A111B1E6048FE15"
+				"66EA9F68E57EB111"
+			]
+			id: "3B3E366066B840CE"
+			tasks: [{
+				id: "7798DEF0551FB314"
+				item: { count: 1, id: "northstar:atmospheric_concentrator" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E0EFD48A312717E"]
+			id: "0AA29EEEAC3855DB"
+			tasks: [{
+				id: "7FCC83F46A732E6B"
+				item: { count: 1, id: "northstar:auto_lander" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0E4D519DDB53D4D7"
+				"1A111B1E6048FE15"
+				"66EA9F68E57EB111"
+			]
+			id: "78B3A923B568788A"
+			tasks: [{
+				id: "2B5FBE639274DB22"
+				item: { count: 1, id: "northstar:oxygen_sealer" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0449AC68C77AFF61"]
+			id: "5C1183CCE5FE61A2"
+			optional: true
+			tasks: [{
+				id: "3533F23E9BB03F0D"
+				item: { count: 1, id: "northstar:computer_rack" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+	]
+}

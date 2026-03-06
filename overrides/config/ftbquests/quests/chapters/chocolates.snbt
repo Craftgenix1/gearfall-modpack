@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chocolates"
+	group: "7BEB7F9AC015517F"
+	id: "0F7E4A0FFEB87E8B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "742C1EF961C169EB"
+			tasks: [{
+				id: "2F510CC289AD52EC"
+				item: { count: 1, id: "create_confectionery:gingerdough" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "0584FA3F3046F1B3"
+			tasks: [{
+				id: "1F500E9739B52091"
+				item: { count: 1, id: "minecraft:cocoa_beans" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+	]
+}
