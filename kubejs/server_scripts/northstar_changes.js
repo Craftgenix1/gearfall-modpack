@@ -105,32 +105,4 @@ ServerEvents.recipes((event) => {
     Fluid.of("northstar:carbon", 100),
     Fluid.of("tfmg:carbon_dioxide", 100),
   );
-
-  //Replace northstar:hardened_precision_mechanism recipe
-  event.recipes.create
-    .sequenced_assembly(
-      [
-        CreateItem.of("northstar:hardened_precision_mechanism", 0.85),
-        CreateItem.of("tfmg:steel_nugget", 0.05),
-        CreateItem.of("tfmg:steel_cogwheel", 0.10),
-      ],
-      "create:precision_mechanism",
-      [
-        event.recipes.create.deploying("northstar:incomplete_hardened_precision_mechanism", [
-          "northstar:incomplete_hardened_precision_mechanism",
-          "chemica:titanium_nugget",
-        ]),
-        event.recipes.create.deploying("northstar:incomplete_hardened_precision_mechanism", [
-          "northstar:incomplete_hardened_precision_mechanism",
-          "tfmg:steel_cogwheel",
-        ]),
-        event.recipes.create.deploying("northstar:incomplete_hardened_precision_mechanism", [
-          "northstar:incomplete_hardened_precision_mechanism",
-          "tfmg:large_steel_cogwheel",
-        ]),
-      ],
-    )
-    .transitionalItem("northstar:incomplete_hardened_precision_mechanism")
-    .loops(5)
-    .id("northstar:sequenced_assembly/hardened_precision_mechanism");
 });

@@ -3,16 +3,21 @@
 	default_quest_shape: ""
 	filename: "growing_factories"
 	group: "597304061B9A21AD"
+	icon: {
+		id: "tfmg:cast_iron_ingot"
+	}
 	id: "2FAF518399FA8FAB"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0DA1533418D076E2"]
+			hide_until_deps_complete: true
 			id: "7A2CACFB8DC43E10"
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
-				count: 64L
+				count: 32L
 				id: "101BE680731B1BB6"
 				item: { count: 1, id: "tfmg:cast_iron_ingot" }
 				type: "item"
@@ -181,16 +186,20 @@
 		}
 		{
 			dependencies: ["24037994ED4727B0"]
+			hide_until_deps_complete: true
+			icon_scale: 1.1d
 			id: "7A2541CA2DDC8334"
 			optional: true
+			shape: "square"
+			size: 0.75d
 			tasks: [{
 				count: 4L
 				id: "578AAB5BFAB851C9"
 				item: { count: 1, id: "tfmg:blast_furnace_reinforcement" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.0d
+			x: 5.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["37CB0B193FD62D9C"]
@@ -209,6 +218,7 @@
 				"24037994ED4727B0"
 				"3A070973A15E1720"
 			]
+			hide_until_deps_complete: true
 			id: "43AA1DC3CD174E6F"
 			tasks: [{
 				count: 4L
@@ -248,6 +258,7 @@
 		}
 		{
 			dependencies: ["24037994ED4727B0"]
+			hide_until_deps_complete: true
 			id: "133F9642306C61F2"
 			tasks: [{
 				count: 8L
@@ -255,11 +266,12 @@
 				item: { count: 1, id: "tfmg:screw" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3D3424E64FFC7E6A"]
+			hide_until_deps_complete: true
 			id: "0D74381FD24F9577"
 			tasks: [{
 				count: 4L
@@ -267,8 +279,8 @@
 				item: { count: 1, id: "tfmg:lead_sheet" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7C33F7674E51E561"]
@@ -279,8 +291,8 @@
 				item: { count: 1, id: "tfmg:nickel_sheet" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["503B3D9AA34014A5"]
@@ -374,6 +386,7 @@
 				"5D6D572647676E0F"
 				"35DC2526D917670A"
 			]
+			hide_until_deps_complete: true
 			id: "503B3D9AA34014A5"
 			tasks: [
 				{
@@ -392,6 +405,7 @@
 		}
 		{
 			id: "5D6D572647676E0F"
+			invisible: true
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
@@ -458,6 +472,7 @@
 		}
 		{
 			id: "13E5D34EB55E248E"
+			invisible: true
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [{
@@ -469,16 +484,20 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["24037994ED4727B0"]
+			hide_dependency_lines: true
 			id: "4658BBE4C07981FC"
 			tasks: [{
 				id: "0698E34EED5DD8B5"
 				item: { count: 1, id: "tfmg:turbine_engine" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: 9.0d
 		}
 		{
+			dependencies: ["04616501E2CD18B1"]
+			hide_until_deps_complete: true
 			id: "22B56B53F3FD1FFB"
 			invisible_until_tasks: 1
 			rewards: [{
@@ -553,7 +572,11 @@
 			y: 11.5d
 		}
 		{
+			dependencies: ["04616501E2CD18B1"]
+			hide_until_deps_complete: true
 			id: "6A9CF5D69DC17278"
+			shape: "hexagon"
+			size: 1.2d
 			tasks: [{
 				id: "4A4C23F311187904"
 				item: { count: 1, id: "tfmg:nitrate_dust" }
@@ -614,6 +637,7 @@
 		}
 		{
 			dependencies: ["24037994ED4727B0"]
+			hide_until_deps_complete: true
 			id: "6B795B8122C860B0"
 			tasks: [{
 				id: "7308937ACB767F6B"
@@ -653,6 +677,11 @@
 			y: 1.5d
 		}
 		{
+			dependencies: [
+				"239F922352C3DCD6"
+				"0DA1533418D076E2"
+			]
+			hide_until_deps_complete: true
 			id: "0CBE55B40D543935"
 			tasks: [{
 				id: "5257FC403E0099DB"
@@ -679,6 +708,7 @@
 		}
 		{
 			id: "3D3424E64FFC7E6A"
+			invisible: true
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [
@@ -714,10 +744,11 @@
 				}
 			]
 			x: -1.5d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			id: "7C33F7674E51E561"
+			invisible: true
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [
@@ -742,8 +773,8 @@
 					type: "observation"
 				}
 			]
-			x: -3.0d
-			y: 3.0d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7BA3563BB3790CE0"]
@@ -756,6 +787,58 @@
 			}]
 			x: 3.0d
 			y: 14.5d
+		}
+		{
+			dependencies: [
+				"0D74381FD24F9577"
+				"239F922352C3DCD6"
+				"133F9642306C61F2"
+				"66CBDFED0E95005F"
+				"5F755F230291A20B"
+			]
+			icon_scale: 0.9d
+			id: "01A151CBA90BD2BB"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "018E1C80D935EF7D"
+				item: { count: 1, id: "tfmg:steel_mechanism" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["24037994ED4727B0"]
+			hide_until_deps_complete: true
+			id: "66CBDFED0E95005F"
+			size: 1.0d
+			tasks: [{
+				id: "60DA38C55650D6C0"
+				item: { count: 1, id: "tfmg:screwdriver" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["24037994ED4727B0"]
+			hide_until_deps_complete: true
+			id: "5F755F230291A20B"
+			tasks: [
+				{
+					id: "314AE7DFA87AAC00"
+					item: { count: 1, id: "tfmg:steel_cogwheel" }
+					type: "item"
+				}
+				{
+					id: "41E977BC0105697E"
+					item: { count: 1, id: "tfmg:large_steel_cogwheel" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 6.0d
 		}
 	]
 }

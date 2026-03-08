@@ -72,6 +72,8 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["01EABF1FDD93FFA1"]
+			hide_until_deps_complete: true
 			id: "5DF96FCE09BBEBA6"
 			tasks: [{
 				id: "282B7DF2E3C9F5AA"
@@ -281,6 +283,11 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"0DA1533418D076E2"
+				"164A91534A8C5EA6"
+			]
+			hide_until_deps_complete: true
 			icon_scale: 1.2d
 			id: "1665975602EAA02D"
 			shape: "hexagon"
@@ -297,7 +304,6 @@
 			dependencies: [
 				"7F4064DED10987FA"
 				"773AD431A2073438"
-				"01EABF1FDD93FFA1"
 				"7D1CDB10EEAB69A9"
 			]
 			id: "3479CDC5D9858114"

@@ -8,6 +8,8 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0DA1533418D076E2"]
+			hide_until_deps_complete: true
 			icon_scale: 0.9d
 			id: "6F7E55AA38392D8D"
 			shape: "hexagon"
@@ -58,6 +60,7 @@
 				"46C48141591D8AB0"
 				"66EA9F68E57EB111"
 				"1A111B1E6048FE15"
+				"01A151CBA90BD2BB"
 			]
 			id: "3E0EFD48A312717E"
 			tasks: [
@@ -115,26 +118,18 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["66EA9F68E57EB111"]
-			id: "39C2C6D26B4AA305"
-			tasks: [{
-				id: "05A58E95DC61ECA7"
-				item: { count: 1, id: "northstar:hardened_precision_mechanism" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["39C2C6D26B4AA305"]
+			dependencies: [
+				"1A111B1E6048FE15"
+				"01A151CBA90BD2BB"
+			]
 			id: "565EF11D4D9C5609"
 			tasks: [{
 				id: "69106E4700D78EEC"
 				item: { count: 1, id: "northstar:targeting_computer" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["565EF11D4D9C5609"]
@@ -144,13 +139,13 @@
 				item: { count: 1, id: "northstar:interplanetary_navigator" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
 				"0E4D519DDB53D4D7"
-				"39C2C6D26B4AA305"
+				"01A151CBA90BD2BB"
 			]
 			id: "39F5E78F0D282FDA"
 			tasks: [{
@@ -162,6 +157,8 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3553EC3AC10A0583"]
+			hide_until_deps_complete: true
 			id: "0E4D519DDB53D4D7"
 			shape: "hexagon"
 			size: 1.2d
@@ -223,8 +220,8 @@
 				item: { count: 1, id: "northstar:computer_rack" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 4.5d
+			y: -6.0d
 		}
 	]
 }

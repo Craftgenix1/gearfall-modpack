@@ -8,6 +8,7 @@ global.itemsToReplace = [
   { old: "northstar:titanium_ingot", new: "chemica:titanium_ingot" },
   { old: "northstar:titanium_nugget", new: "chemica:titanium_nugget" },
   { old: "northstar:titanium_sheet", new: "chemica:titanium_sheet" },
+  { old: "northstar:hardened_precision_mechanism", new: "tfmg:steel_mechanism" },
 ];
 
 const replaceOld = global.itemsToReplace.map(function (item) {
@@ -63,6 +64,7 @@ global.recipesToRemove = [
   "northstar:crafting/iron_large_cogwheel_from_small",
   "northstar:crafting/iron_cogwheel",
   "northstar:mechanical_crafting/electrolysis_machine",
+  "northstar:sequenced_assembly/hardened_precision_mechanism",
 ];
 
 //Remove items from creative tabs, including search tab (this is brute force approach, every item is checked for every tab, but it works :)
