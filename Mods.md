@@ -1,16 +1,15 @@
-## Content (14)
+## Content (326)
 
-### Technology Mods (core of Gearfall) [5]
+### Technology Mods (core of Gearfall) [4]
 
 | Mods | Purpose |
 |---|---|
-| [Create Mod](https://www.curseforge.com/minecraft/mc-mods/create) | Do I need to say anything? |
-| [Create Mechanical Extruder](https://www.curseforge.com/minecraft/mc-mods/create-mechanical-extruder) | A performance friendly alternative to world interaction recipes like cobble gen, etc. |
-| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | Makes create a bit harder, and is core part of Gearfall |
-| [Create: Northstar - Redux](https://www.curseforge.com/minecraft/mc-mods/northstar-redux) | Space exploration! |
-| [Chemica](https://www.curseforge.com/minecraft/mc-mods/chemica) | TFMG addon that adds real world chemistry |
+| [Create Mod](https://www.curseforge.com/minecraft/mc-mods/create) | The central mod in the pack, with the most addons. |
+| [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) | Honestly an essential in any pack |
+| [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) | Can't have a good pack without backpacks! |
+| [Sophisticated Storage](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage) | compliments Sophisticated backpacks well. |
 
-### Other create mod addons [9]
+### Create mod addons [REVISIT]
 
 | Mods | Purpose |
 |---|---|
@@ -23,6 +22,11 @@
 | [Create: Numismatics](https://www.curseforge.com/minecraft/mc-mods/numismatics) | Economy and Capitalism |
 | [Create: Trading Floor](https://www.curseforge.com/minecraft/mc-mods/create-trading-floor) | Adds the trading depot block, which can be used within create to automatically trade with villagers over the day |
 | [Create: Mob Spawners](https://www.curseforge.com/minecraft/mc-mods/create-mob-spawners) | Adds a tool that can catch mobs which can then be placed into a spawner |
+| [Create Mechanical Extruder](https://www.curseforge.com/minecraft/mc-mods/create-mechanical-extruder) | A performance friendly alternative to world interaction recipes like cobble gen, etc. |
+| [Create: The Factory Must Grow](https://www.curseforge.com/minecraft/mc-mods/create-industry) | Makes create a bit harder, and is core part of Gearfall |
+| [Create: Northstar - Redux](https://www.curseforge.com/minecraft/mc-mods/northstar-redux) | Space exploration! |
+| [Chemica](https://www.curseforge.com/minecraft/mc-mods/chemica) | TFMG addon that adds real world chemistry |
+
 
 ## Visuals and QOL (9+1)
 
@@ -44,7 +48,6 @@
 | Mods | Purpose |
 |---|---|
 | [Blur+](https://www.curseforge.com/minecraft/mc-mods/blur-fabric) | Blurs the rest of the game when a gui is open |
-
 | Resource Packs | Purpose |
 | [Motschen's Better Leaves](https://www.curseforge.com/minecraft/texture-packs/motschens-better-leaves) | Bushy leaves without any performance drop! |
 
